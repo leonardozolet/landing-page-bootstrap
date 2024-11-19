@@ -1,43 +1,71 @@
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+    font-family: roboto, sans-serif; /* a segunda fonte é caso a primeira não funcione*/
 }
 
-.navbar{
-    background-color: #1c1c1c;
+.navbar {
+    background-color: #991010;
 }
 
-.nav .nav-link.active{
-    background-color: #3a3a3a;
-    color: #39FF14;
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #991010;
 }
 
-.nav .nav-link,
+#cabecalho .nav .nav-link,
 .navbar-brand,
-.navbar-brand:hover{
-    color: #39FF14;
+.navbar-brand:hover,
+.nav-servicos .nav-link.active:hover { /* :hover tirar o piscado em preto do nome do restaurante */ 
+    color: #fff;
 }
 
-.navbar-brand{
-    font-family: 'Tiny5', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
+.navbar-toggler {
+    background-color: #ffffff;
 }
 
-.navbar-toggler{
-    background-color: #3a3a3a;
-    color: #39FF14;
+.section-title {
+    font-family: Inter, serif;
 }
 
-.section-title{
-    font-family: 'Tiny5', sans-serif;
-    font-weight: 700;
-    color: #39FF14;
+#sobre-nos,
+#servicos {
+    background-color: #eeebeb;
 }
 
-p, ul li{
-    color: #f2f2f2;
+.text-colored {  /* ref cor de só um pedaço do texto */
+    color: #991010;
 }
 
-#sobre-a-loja{
-    background-color: #1c1c1c;
+.nav-servicos .nav-link.active,
+#fale-conosco button { /* referente a cor dos botoes do menu e do botao do formulario no final */
+    background-color: #991010;
+    color: #fff;
+}
+
+.nav-servicos .nav-link:hover { /* :hover tirar o piscado em azul que tinha antes */ 
+    color: #000000;
+}
+
+.social-links li, .contato {
+    list-style: none; /* para remover os bullets */
+    display: inline; /* para ficar um ao lado do outro */
+}
+
+.social-links li a {
+    text-decoration: none; /* para retirar o underline que ficam entre os links */
+    color: #991010;
+}
+
+.error {
+    color: rgb(114, 33, 33)
+}
+
+footer {
+    background-color: #991010;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
 }
